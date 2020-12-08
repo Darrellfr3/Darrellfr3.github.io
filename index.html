@@ -3,14 +3,35 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./Assets/css/style.css">
-    <title>Darrell Robinsons Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>DarrellR Portfolio</title>
 </head>
 
-<main>
+<body>
 
     <!-- Header for webpage which ontains navigation bar and my name -->
     <header>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#fat">@fat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mdo">@mdo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#one">one</a>
+                  <a class="dropdown-item" href="#two">two</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#three">three</a>
+                </div>
+              </li>
+            </ul>
+        </nav>
         <h1>Darrell Robinson III</h1>
         <nav>
             <ul>
@@ -33,21 +54,50 @@
     <!-- Adds title in banner -->
     <div><h2>My Portfolio</h2></div>
 
-    <!-- Aside of the webpage which contains articles -->
-    <aside>
+    <div class="container">
+        <div class="row">
+          <div class="col" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <aside>
 
-        <!-- Aside housing titles for webpage -->
-        <article>
-            <a id="aboutMe"><h3>About<br>Me</h3></a>
-        </article>
-        <article>
-            <a id="projects"><h4>Projects</h4></a>
-        </article>
-        <article>
-            <a id="contactMe"><h3>Contact</h3></a>
-        </article>
-    </aside>
-
+                <!-- Aside housing titles for webpage -->
+                <article>
+                    <a id="aboutMe"><h3>About<br>Me</h3></a>
+                </article>
+                <article>
+                    <a id="projects"><h4>Projects</h4></a>
+                </article>
+                <article>
+                    <a id="contactMe"><h3>Contact</h3></a>
+                </article>
+            </aside>
+          </div>
+          <div class="col-10">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <div class="card" style="width: 50rem;">
+                    <img class="card-img-top" src="./Assets/images/calculator-project.jpeg" alt="Calculator" href="https://github.com/Darrellfr3?tab=repositories">
+                    <div class="card-body">
+                      <a class="card-title" href="https://github.com/Darrellfr3?tab=repositories">Card title</a>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="card" style="width: 25rem;">
+                    <img class="card-img-top" src="./Assets/images/calculator-project.jpeg" alt="Calculator" href="https://github.com/Darrellfr3?tab=repositories">
+                    <div class="card-body">
+                      <a class="card-title" href="https://github.com/Darrellfr3?tab=repositories">Card title</a>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="card" style="width: 25rem;">
+                    <img class="card-img-top" src="./Assets/images/calculator-project.jpeg" alt="Calculator" href="https://github.com/Darrellfr3?tab=repositories">
+                    <div class="card-body">
+                      <a class="card-title" href="https://github.com/Darrellfr3?tab=repositories">Card title</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
     <!-- Section of of webpage contains articles -->
     <section>
 
@@ -58,25 +108,10 @@
             </p>
         </article>
 
-        <!-- Project section of webpage -->
-        <article>
-            <a href="https://github.com/Darrellfr3?tab=repositories"><img src="./Assets/images/calculator-project.jpeg" alt="Calculator" style="width:300;height:100"></a>
-        </article>
-        <article>
-            <a href="https://github.com/Darrellfr3?tab=repositories"><img src="./Assets/images/snake-game3.jpeg" alt="Snake game" style="width:140;height:50"></a>
-            <a href="https://github.com/Darrellfr3?tab=repositories"><img src="./Assets/images/word game.jpeg" alt="Word game" style="width:140;height:50"></a>
-        </article>
-
         <!-- Contact section of webpage -->
         <article>
             <p>
                 <ul>
-                    <li>
-                        <span><p>832-235-6408</p></span>
-                    </li>
-                    <li>
-                        <span><p>darrellfr3@gmail.com</p></span>
-                    </li>
                     <li>
                         <span><a href="https://github.com/Darrellfr3"><p>Github</p></a></span>
                     </li>
@@ -94,6 +129,12 @@
             &copy; 2020 Darrell, Inc.
         </small>
     </footer>
-</main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 
 </html>
